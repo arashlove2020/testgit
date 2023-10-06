@@ -1,9 +1,9 @@
 
 
 
-source $HOME/.bash_profile
+ $HOME/.bash_profile
 ------------------------------------------
-
+source
 ---------------------------------------------
 
  -C /usr/local -xzf "go$ver.linux-amd64.tar.gz"
