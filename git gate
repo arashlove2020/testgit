@@ -3,7 +3,7 @@
 
  $HOME/.bash_profile
 ------------------------------------------
-version
+
 ---------------------------------------------
 version
  -C /usr/ -xzf "go$ver.linux-amd64.tar.gz"
