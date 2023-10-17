@@ -11,7 +11,7 @@ echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
  $HOME/.bash_profile
 
 ---------------------------------------------------
-
+ $HOME/.bash_profile
 --------------------------------------
 cd $HOME
 rm -rf celestia-app
