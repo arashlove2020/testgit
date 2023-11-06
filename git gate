@@ -6,7 +6,7 @@ echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profil
 
 
 -------------------------------------------------
-git clone https://github.com/celestiaorg/networks
+
 
 -------------------------------------------
 git clone https://github.com/celestiaorg/networks
