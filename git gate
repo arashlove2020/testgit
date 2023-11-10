@@ -3,7 +3,7 @@
 echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profil
 
 ---------------------------------------------------
-
+git clone https://github.com/celestiaorg/networks
 
 -------------------------------------------
 git clone https://github.com/celestiaorg/networks
@@ -35,7 +35,7 @@ celestia-appd init $CELESTIA_NODENAME --chain-id $CELESTIA_CHAIN
 
 -------------------------------------
 cp $HOME/networks/mamaki/genesis.json $HOME/.celestia-app/config/
-
+git clone https://github.com/celestiaorg/networks
 ---------------------------------------
 sed -i 's/mode = \"full\"/mode = \"validator\"/g' $HOME/.celestia-app/config/config.toml
 
