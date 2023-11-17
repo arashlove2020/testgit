@@ -2,10 +2,9 @@
 
 echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profil
 
----------------------------------------------------
 -------------------------------------------
 git clone https://github.com/celestiaorg/networks
- خودتون رو قرار بدید
+
 -------------------------------
 
 git clone https://github.com/celestiaorg/networks.git
