@@ -6,13 +6,11 @@ echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profil
 git clone https://github.com/celestiaorg/networks
 
 -------------------------------
-
-git clone https://github.com/celestiaorg/networks.git
-
 --------------------------
 CELESTIA_NODENAME="MY_NODE" 
 CELESTIA_WALLET="MY_WALLET"
 
+git clone https://github.com/celestiaorg/networks.git
 
 
 CELESTIA_NODENAME="amir" 
