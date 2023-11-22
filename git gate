@@ -6,8 +6,7 @@ echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profil
 git clone https://github.com/celestiaorg/networks
 
 -------------------------------
---------------------------
-CELESTIA_NODENAME="MY_NODE" 
+
 
 git clone https://github.com/celestiaorg/networks.git
 
