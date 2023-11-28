@@ -1,8 +1,7 @@
 
 
 echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profil
-
-
+celestia-appd init $CELESTIA_NODENAME --chain-id $CELESTIA_CHAIN
 git clone https://github.com/celestiaorg/networks.git
 
 CELESTIA_WALLET="amir8372"
