@@ -4,7 +4,6 @@ echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profil
 celestia-appd init $CELESTIA_NODENAME --chain-id $CELESTIA_CHAIN
 git clone https://github.com/celestiaorg/networks.git
 
-CELESTIA_WALLET="amir8372"
 CELESTIA_CHAIN="mamaki"
 git clone https://github.com/celestiaorg/networks
 ----------------------------------------------------------
@@ -12,6 +11,7 @@ echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> $HOME/.bash_profile
 echo 'export CELESTIA_NODENAME='${CELESTIA_NODENAME} >> $HOME/.bash_profile
 echo 'export CELESTIA_WALLET='${CELESTIA_WALLET} >> $HOME/.bash_profile
 source $HOME/.bash_profile
+CELESTIA_CHAIN="mamaki"
 
 ------------------------------------------------
 celestia-appd init $CELESTIA_NODENAME --chain-id $CELESTIA_CHAIN
