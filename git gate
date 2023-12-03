@@ -4,8 +4,6 @@ echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profil
 celestia-appd init $CELESTIA_NODENAME --chain-id $CELESTIA_CHAIN
 git clone https://github.com/celestiaorg/networks.git
 
-
-git clone https://github.com/celestiaorg/networks
 ----------------------------------------------------------
 echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> $HOME/.bash_profile
 echo 'export CELESTIA_NODENAME='${CELESTIA_NODENAME} >> $HOME/.bash_profile
@@ -20,6 +18,7 @@ celestia-appd init $CELESTIA_NODENAME --chain-id $CELESTIA_CHAIN
 cp $HOME/networks/mamaki/genesis.json $HOME/.celestia-app/config/
 git clone https://github.com/celestiaorg/networks
 ---------------------------------------
+git clone https://github.com/celestiaorg/networks
 
 ---------------------------------------------
 BOOTSTRAP_PEERS=$(curl -sL https://raw.githubusercontent.com/celestiaorg/networks/master/mamaki/bootstrap-peers.txt | tr -d '\n')
