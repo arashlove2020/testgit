@@ -15,7 +15,6 @@ cp $HOME/networks/mamaki/genesis.json $HOME/.celestia-app/config/
 git clone https://github.com/celestiaorg/networks
 ---------------------------------------------
 BOOTSTRAP_PEERS=$(curl -sL https://raw.githubusercontent.com/celestiaorg/networks/master/mamaki/bootstrap-peers.txt | tr -d '\n')
-git clone https://github.com/celestiaorg/networks
 
 ------------------------------------------------
 sed -i.bak -e "s/^bootstrap-peers *=.*/bootstrap-peers = \"$BOOTSTRAP_PEERS\"/" $HOME/.celestia-app/config/config.toml
