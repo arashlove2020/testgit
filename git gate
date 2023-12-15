@@ -12,11 +12,9 @@ source $HOME/.bash_profile
 CELESTIA_CHAIN="mamaki"
 celestia-appd init $CELESTIA_NODENAME --chain-id $CELESTIA_CHAIN
 -------------------------------------
-cp $HOME/networks/mamaki/genesis.json $HOME/.celestia-app/config/
 git clone https://github.com/celestiaorg/networks
 ---------------------------------------------
 BOOTSTRAP_PEERS=$(curl -sL https://raw.githubusercontent.com/celestiaorg/networks/master/mamaki/bootstrap-peers.txt | tr -d '\n')
-
 ------------------------------------------------
 
 
