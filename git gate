@@ -14,10 +14,6 @@ celestia-appd init $CELESTIA_NODENAME --chain-id $CELESTIA_CHAIN
 ---------------------------------------------
 BOOTSTRAP_PEERS=$(curl -sL https://raw.githubusercontent.com/celestiaorg/networks/master/mamaki/bootstrap-peers.txt | tr -d '\n')
 ------------------------------------------------
-
-
-sed -i 's/peer-gossip-sleep-duration *=.*/peer-gossip-sleep-duration = "2ms"/g' $HOME/.celestia-app/config/config.toml
-
 -----------------------------------------------------------------
 sed -i 's/peer-gossip-sleep-duration *=.*/peer-gossip-sleep-duration = "2ms"/g' $HOME/.celestia-app/config/config.toml
 sed -i 's/peer-gossip-sleep-duration *=.*/peer-gossip-sleep-duration = "2ms"/g' $HOME/.celestia-app/config/config.toml
@@ -62,7 +58,6 @@ tee $HOME/celestia-appd.service > /dev/null <<EOF
   RestartSec=3
   LimitNOFILE=65535
 [Install]
-  WantedBy=multi-user.target
 EOF
 
 ---------------------------------------------------
