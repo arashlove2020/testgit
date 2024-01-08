@@ -15,11 +15,12 @@ sed -i 's/peer-gossip-sleep-duration *=.*/peer-gossip-sleep-duration = "2ms"/g' 
 s/^max-num-inbound-peers *=.*/max-num-inbound-peers = $max_num_inbound_peers/;\
 s/^max-num-outbound-peers *=.*/max-num-outbound-peers = $max_num_outbound_peers/;\
 s/^max-connections *=.*/max-connections = $max_connections/" $HOME/.celestia-app/config/config.toml
-
-------------------------------------------------
 pruning_keep_recent="100" 
 
+------------------------------------------------
+
 ------------------------------------------------------
+pruning_keep_recent="100" 
 
 sed -i -e "s/^pruning *=.*/pruning = \"custom\"/;\
 s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_recent\"/;\
