@@ -1,6 +1,4 @@
 
-
-echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profil
 celestia-appd init $CELESTIA_NODENAME --chain-id $CELESTIA_CHAIN
 sed -i 's/peer-gossip-sleep-duration *=.*/peer-gossip-sleep-duration = "2ms"/g' $HOME/.celestia-app/config/config.toml
 
