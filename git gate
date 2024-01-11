@@ -1,5 +1,3 @@
-
-celestia-appd init $CELESTIA_NODENAME --chain-id $CELESTIA_CHAIN
 sed -i 's/peer-gossip-sleep-duration *=.*/peer-gossip-sleep-duration = "2ms"/g' $HOME/.celestia-app/config/config.toml
 
 echo 'export CELESTIA_NODENAME='${CELESTIA_NODENAME} >> $HOME/.bash_profile
