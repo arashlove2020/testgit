@@ -5,13 +5,11 @@ echo 'export CELESTIA_WALLET='${CELESTIA_WALLET} >> $HOME/.bash_profile
 ---------------------------------------------
 BOOTSTRAP_PEERS=$(curl -sL https://raw.githubusercontent.com/celestiaorg/networks/master/mamaki/bootstrap-peers.txt | tr -d '\n')
 ------------------------------------------------
------------------------------------------------------------------
 sed -i 's/peer-gossip-sleep-duration *=.*/peer-gossip-sleep-duration = "2ms"/g' $HOME/.celestia-app/config/config.toml
 s/^max-num-inbound-peers *=.*/max-num-inbound-peers = $max_num_inbound_peers/;\
 s/^max-num-outbound-peers *=.*/max-num-outbound-peers = $max_num_outbound_peers/;\
 s/^max-connections *=.*/max-connections = $max_connections/" $HOME/.celestia-app/config/config.toml
 pruning_keep_recent="100" 
-
 ------------------------------------------------
 s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_recent\"/;\
 s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.celestia-app/config/app.toml
