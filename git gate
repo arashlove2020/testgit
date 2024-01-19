@@ -15,11 +15,11 @@ s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_recent\"/;\
 s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.celestia-app/config/app.toml
 ---------------------------------------------------
 celestia-appd config chain-id $CELESTIA_CHAIN
-
 ---------------------------------------------------
 celestia-appd tendermint unsafe-reset-all --home $HOME/.celestia-app
 
 celestia-appd config keyring-backend test
+celestia-appd config chain-id $CELESTIA_CHAIN
 
 -------------------------------------------------------
 tee $HOME/celestia-appd.service > /dev/null <<EOF
